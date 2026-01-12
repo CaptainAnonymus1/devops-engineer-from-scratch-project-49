@@ -14,4 +14,10 @@
 
 ## ASCIINEMA
 
-[Video on web](https://asciinema.org/a/mUAf9O7Tj3KzZZokwYFZAJj7l)
+[Video on web for brain-games:](https://asciinema.org/a/mUAf9O7Tj3KzZZokwYFZAJj7l)
+
+[Video on web for brain-gcd:](https://asciinema.org/connect/4661f7e3-a884-4be5-b5b6-a954dd3b73ea)
+
+[Video on web for brain-progression:]( https://asciinema.org/connect/4661f7e3-a884-4be5-b5b6-a954dd3b73ea)
+
+[Video on web for brain-prime:](  https://asciinema.org/a/p8gkSEiBJqz4hyQj)
