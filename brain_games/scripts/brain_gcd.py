@@ -41,7 +41,7 @@ def main():
         second_number = list_of_numbers[i + 1]  
         correct_answer = get_gcd(first_number, second_number)
         answer = string(
-            prompt=f"Question: {first_number}, {second_number}\n"
+            prompt=f'Question: {first_number} {second_number}\n'
         )
         print(f"Your answer: {answer}")
         if int(answer) != correct_answer:
