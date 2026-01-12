@@ -44,7 +44,7 @@ def get_missing_number(progression_list, index):
 
 def get_puzzle(progression_list, index):
     puzzle_list = progression_list.copy()
-    puzzle_list[index] = "..."
+    puzzle_list[index] = ".."
     puzzle = ' '.join(str(x) for x in puzzle_list)
     return puzzle
 
