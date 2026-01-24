@@ -1,0 +1,28 @@
+from  brain_games.games_engine import engine
+import random
+
+
+def get_random_list():
+    random_list = list()
+    for _ in range(3):
+        random_figure = random.randint(1, 20)
+        random_list.append(random_figure)
+    return random_list
+
+
+def brain_even():
+    numbers = get_random_list()
+    puzzles_list = list()
+    correct_answers_list = list()
+    for number in numbers:
+        puzzles_list.append(str(number))
+        correct_answer = "yes" if number % 2 == 0 else "no"
+        correct_answers_list.append(correct_answer)
+    return puzzles_list, correct_answers_list
+
+def main():
+    game_name = "brain-even"
+    task = 'Answer "yes" if the number is even, otherwise answer "no".' 
+    
+    puzzles_list, correct_answers = brain_even()
+    engine(game_name, task, puzzles_list, correct_answers)

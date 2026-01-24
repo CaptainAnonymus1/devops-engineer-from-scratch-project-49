@@ -9,3 +9,6 @@ build: # сборка проекта
 
 package-install: # установка пакета в ос
 	uv tool install dist/*.whl
+
+lint: # запуск линтера
+	uv run ruff check brain_games
