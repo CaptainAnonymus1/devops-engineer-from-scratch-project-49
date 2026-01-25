@@ -9,6 +9,7 @@ def get_random_list():
         random_list.append(random_figure)
     return random_list
 
+
 def is_prime(number):
     if number < 2:
         return False
@@ -18,6 +19,7 @@ def is_prime(number):
             return False
         divider += 1
     return True
+
 
 def brain_prime():
     numbers = get_random_list()
@@ -36,4 +38,3 @@ def main():
 
     puzzles_list, correct_answers = brain_prime()
     engine(game_name, task, puzzles_list, correct_answers)
-    

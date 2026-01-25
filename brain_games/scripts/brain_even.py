@@ -1,4 +1,4 @@
-from  brain_games.games_engine import engine
+from brain_games.games_engine import engine
 import random
 
 
@@ -20,9 +20,10 @@ def brain_even():
         correct_answers_list.append(correct_answer)
     return puzzles_list, correct_answers_list
 
+
 def main():
     game_name = "brain-even"
-    task = 'Answer "yes" if the number is even, otherwise answer "no".' 
+    task = 'Answer "yes" if the number is even, otherwise answer "no".'
     
     puzzles_list, correct_answers = brain_even()
     engine(game_name, task, puzzles_list, correct_answers)

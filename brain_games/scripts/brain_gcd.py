@@ -9,6 +9,7 @@ def get_random_list():
         random_list.append(random_figure)
     return random_list
 
+
 def get_gcd(first_number, second_number):
     a = first_number
     b = second_number
@@ -18,6 +19,7 @@ def get_gcd(first_number, second_number):
         b = c
     gcd = a
     return gcd
+
 
 def brain_gcd():
     numbers = get_random_list()
@@ -29,13 +31,14 @@ def brain_gcd():
     while counter < 3:
         first_number = numbers[i]
         second_number = numbers[i + 1]
-        puzzle = f'{first_number} {second_number}'       
+        puzzle = f'{first_number} {second_number}'
         puzzles_list.append(puzzle)
         correct_answer = get_gcd(first_number, second_number)
         correct_answers.append(str(correct_answer))
         counter += 1
         i += 2
-    return puzzles_list, correct_answers 
+    return puzzles_list, correct_answers
+
 
 def main():
     game_name = "brain_gcd"
