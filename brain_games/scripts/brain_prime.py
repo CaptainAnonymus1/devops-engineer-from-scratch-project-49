@@ -1,20 +1,14 @@
+from brain_games.games_engine import engine
 import random
-
-from prompt import string
-
-# generator 
-# list of 3 random numbers = max 3 rounds of game required.
 
 
 def get_random_list():
     random_list = list()
     for _ in range(3):
-        random_figure = random.randint(1, 99)
+        random_figure = random.randint(1, 20)
         random_list.append(random_figure)
     return random_list
 
-
-# validator
 
 def is_prime(number):
     if number < 2:
@@ -27,36 +21,20 @@ def is_prime(number):
     return True
 
 
-def get_correct_answer(number):
-    return "yes" if is_prime(number) else "no" 
+def brain_prime():
+    numbers = get_random_list()
+    puzzles_list = list()
+    correct_answers = list()
+    for number in numbers:
+        puzzles_list.append(number)
+        correct_answer = "yes" if is_prime(number) else "no"
+        correct_answers.append(str(correct_answer))
+    return puzzles_list, correct_answers
 
 
 def main():
-    print("brain-prime\n")
-    print("Welcome to the Brain Games!")
+    game_name = "brain_prime"
+    task = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
-    name = string(prompt="May I have your name? ")
-    print(f"Hello, {name}!")
-    print('Answer "yes" if given number is prime. Otherwise answer "no".')
-
-    wins_counter = 0
-    puzzle = get_random_list()
-
-    for i in range(3):
-        # max 3 rounds of game required
-        number = puzzle[i]
-        correct_answer = get_correct_answer(number)
-        
-        answer = string(prompt=f"Question: {number}\n")
-        print(f"Your answer: {answer}")  
-        if answer != correct_answer:
-            print(f'"{answer}" is wrong answer ;(. '
-                  f'Correct answer was "{correct_answer}"')
-            print(f"Let's try again, {name}!")
-            return
-        else:
-            print("Correct!")
-            wins_counter += 1
-
-    print(f"Congratulations, {name}!")
-    
+    puzzles_list, correct_answers = brain_prime()
+    engine(game_name, task, puzzles_list, correct_answers)

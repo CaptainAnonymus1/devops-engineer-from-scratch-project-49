@@ -1,9 +1,5 @@
+from brain_games.games_engine import engine
 import random
-
-from prompt import string
-
-# generator
-# list of 6 random numbers = max 3 rounds of game required.
 
 
 def get_random_list():
@@ -49,35 +45,29 @@ def get_puzzle(progression_list, index):
     return puzzle
 
 
-def main():
-    print("brain-progression\n")
-    print("Welcome to the Brain Games!")
-    name = string(prompt="May I have your name? ")
-    print(f"Hello, {name}!")
-    print('What number is missing in the progression?')
+def brain_progression():
+    random_list = get_random_list()
+    puzzles_list = list()
+    correct_answers = list()
+    counter = 0
 
-    wins_counter = 0
-    
-    while wins_counter < 3:
-        random_list = get_random_list()
+    while counter < 3:
         index = get_index()
         start_number = get_start_number(random_list, index)
         step = get_step()
         progression_list = get_progression_list(start_number, step)
         puzzle = get_puzzle(progression_list, index)
+        puzzles_list.append(puzzle)
         missing_number = get_missing_number(progression_list, index)
         correct_answer = missing_number
+        correct_answers.append(str(correct_answer))
+        counter += 1
+    return puzzles_list, correct_answers
 
-        answer = string(
-            prompt=f"Question: {puzzle}\n"
-        )
-        print(f"Your answer: {answer}")
-        if int(answer) != correct_answer:
-            print(f'{answer} is wrong answer ;(. '
-                  f'Correct answer was {correct_answer}')
-            print(f"Let's try again, {name}!")
-            return
-        else:
-            print("Correct!")
-            wins_counter += 1
-    print(f"Congratulations, {name}!")
+
+def main():
+    game_name = "brain_progression"
+    task = 'What number is missing in the progression?'
+
+    puzzles_list, correct_answers = brain_progression()
+    engine(game_name, task, puzzles_list, correct_answers)

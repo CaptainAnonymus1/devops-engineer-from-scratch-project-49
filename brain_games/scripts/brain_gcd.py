@@ -1,9 +1,5 @@
+from brain_games.games_engine import engine
 import random
-
-from prompt import string
-
-# generator
-# list of 6 random numbers = max 3 rounds of game required.
 
 
 def get_random_list():
@@ -25,32 +21,28 @@ def get_gcd(first_number, second_number):
     return gcd
 
 
-def main():
-    print("brain-gsd\n")
-    print("Welcome to the Brain Games!")
-    name = string(prompt="May I have your name? ")
-    print(f"Hello, {name}!")
-    print('Find the greatest common divisor of given numbers.')
-
-    list_of_numbers = get_random_list()
+def brain_gcd():
+    numbers = get_random_list()
+    puzzles_list = list()
+    correct_answers = list()
     i = 0
-    wins_counter = 0
-    while wins_counter <= 3 and (i + 1) < len(list_of_numbers):
-        # max 3 rounds of game required
-        first_number = list_of_numbers[i]
-        second_number = list_of_numbers[i + 1]  
+    counter = 0
+
+    while counter < 3:
+        first_number = numbers[i]
+        second_number = numbers[i + 1]
+        puzzle = f'{first_number} {second_number}'
+        puzzles_list.append(puzzle)
         correct_answer = get_gcd(first_number, second_number)
-        answer = string(
-            prompt=f'Question: {first_number} {second_number}\n'
-        )
-        print(f"Your answer: {answer}")
-        if int(answer) != correct_answer:
-            print(f'{answer} is wrong answer ;(. '
-                  f'Correct answer was {correct_answer}')
-            print(f"Let's try again, {name}!")
-            return
-        else:
-            print("Correct!")
-            wins_counter += 1
-            i += 2
-    print(f"Congratulations, {name}!")
+        correct_answers.append(str(correct_answer))
+        counter += 1
+        i += 2
+    return puzzles_list, correct_answers
+
+
+def main():
+    game_name = "brain_gcd"
+    task = 'Find the greatest common divisor of given numbers.'
+
+    puzzles_list, correct_answers = brain_gcd()
+    engine(game_name, task, puzzles_list, correct_answers)
