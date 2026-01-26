@@ -1,6 +1,5 @@
 from brain_games.games_engine import engine
-from brain_games.games.progression import get_random_list, get_index, brain_progression, get_start_number, get_step, get_progression_list, get_missing_number, get_puzzle
-import random
+from brain_games.games.progression import brain_progression
 
 
 def main():

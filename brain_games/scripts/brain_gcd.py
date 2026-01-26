@@ -1,6 +1,5 @@
 from brain_games.games_engine import engine
-from brain_games.games.gcd import get_random_list, get_gcd, brain_gcd
-import random
+from brain_games.games.gcd import brain_gcd
 
 
 def main():

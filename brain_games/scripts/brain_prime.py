@@ -1,6 +1,5 @@
 from brain_games.games_engine import engine
-from brain_games.games.prime import get_random_list, is_prime, brain_prime
-import random
+from brain_games.games.prime import brain_prime
 
 
 def main():

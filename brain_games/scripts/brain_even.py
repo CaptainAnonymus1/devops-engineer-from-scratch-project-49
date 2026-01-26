@@ -1,7 +1,5 @@
 from brain_games.games_engine import engine
-from brain_games.games.even import get_random_list
 from brain_games.games.even import brain_even
-import random
 
 
 def main():
