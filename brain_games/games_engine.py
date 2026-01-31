@@ -1,5 +1,5 @@
 from prompt import string
-from brain_games import find
+from brain_games.games import find
 
 
 def engine(game_name, task, puzzle, correct_answer):
