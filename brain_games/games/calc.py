@@ -21,4 +21,4 @@ def find():
     action = random_choice()
     puzzle = f'{first_number} {action} {second_number}'
     correct_answer = action_result(first_number, second_number, action)
-    return puzzle, correct_answer
+    return puzzle, str(correct_answer)

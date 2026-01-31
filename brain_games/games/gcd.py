@@ -25,4 +25,4 @@ def find():
     second_number = random.randint(1, 20)
     puzzle = f'{first_number} {second_number}'
     correct_answer = get_gcd(first_number, second_number)
-    return puzzle, correct_answer
+    return puzzle, str(correct_answer)

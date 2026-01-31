@@ -6,5 +6,4 @@ def main():
     game_name = "brain_prime"
     task = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
-    puzzle, correct_answer = find()
-    engine(game_name, task, puzzle, correct_answer)
+    engine(game_name, task, find)
