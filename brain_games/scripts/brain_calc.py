@@ -6,5 +6,4 @@ def main():
     game_name = 'brain_calculation'
     task = 'What is the result of the expression?'
     
-    puzzle, correct_answer = find()
-    engine(game_name, task, puzzle, correct_answer)
+    engine(game_name, task, find)

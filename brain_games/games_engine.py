@@ -1,8 +1,7 @@
 from prompt import string
-from brain_games.games import find
 
 
-def engine(game_name, task, puzzle, correct_answer):
+def engine(game_name, task, find):
     print(f"{game_name}\n")
     print("Welcome to the Brain Games!")
     user_name = string(prompt="May I have your name? ")
