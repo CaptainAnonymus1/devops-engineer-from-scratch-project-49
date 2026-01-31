@@ -44,21 +44,13 @@ def get_puzzle(progression_list, index):
     return puzzle
 
 
-def brain_progression():
+def find():
     random_list = get_random_list()
-    puzzles_list = list()
-    correct_answers = list()
-    counter = 0
-
-    while counter < 3:
-        index = get_index()
-        start_number = get_start_number(random_list, index)
-        step = get_step()
-        progression_list = get_progression_list(start_number, step)
-        puzzle = get_puzzle(progression_list, index)
-        puzzles_list.append(puzzle)
-        missing_number = get_missing_number(progression_list, index)
-        correct_answer = missing_number
-        correct_answers.append(str(correct_answer))
-        counter += 1
-    return puzzles_list, correct_answers
+    index = get_index()
+    start_number = get_start_number(random_list, index)
+    step = get_step()
+    progression_list = get_progression_list(start_number, step)
+    puzzle = get_puzzle(progression_list, index)
+    missing_number = get_missing_number(progression_list, index)
+    correct_answer = str(missing_number)
+    return puzzle, correct_answer
