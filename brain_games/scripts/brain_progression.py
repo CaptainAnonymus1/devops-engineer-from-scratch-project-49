@@ -1,9 +1,8 @@
 from brain_games.games_engine import engine
-from brain_games.games.progression import find
+from brain_games.games.progression import get_game_data
 
 
 def main():
     game_name = "brain_progression"
-    task = 'What number is missing in the progression?'
 
-    engine(game_name, task, find)
+    engine(game_name, get_game_data)

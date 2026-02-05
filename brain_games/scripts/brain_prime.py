@@ -1,9 +1,8 @@
 from brain_games.games_engine import engine
-from brain_games.games.prime import find
+from brain_games.games.prime import get_game_data
 
 
 def main():
     game_name = "brain_prime"
-    task = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-
-    engine(game_name, task, find)
+ 
+    engine(game_name, get_game_data)

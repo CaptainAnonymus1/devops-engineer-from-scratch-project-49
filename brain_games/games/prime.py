@@ -12,8 +12,9 @@ def is_prime(number):
     return True
 
 
-def find():
+def get_game_data():
+    task = 'Answer "yes" if given number is prime. Otherwise answer "no".'
     number = random.randint(1, 20)
     correct_answer = "yes" if is_prime(number) else "no"
     puzzle = str(number)
-    return puzzle, correct_answer
+    return puzzle, correct_answer, task

@@ -32,11 +32,6 @@ def get_progression_list(start_number, step):
     return progression_list
 
 
-def get_missing_number(progression_list, index):
-    missing_number = progression_list[index]
-    return missing_number
-
-
 def get_puzzle(progression_list, index):
     puzzle_list = progression_list.copy()
     puzzle_list[index] = ".."
@@ -44,13 +39,13 @@ def get_puzzle(progression_list, index):
     return puzzle
 
 
-def find():
+def get_game_data():
+    task = 'What number is missing in the progression?'
     random_list = get_random_list()
     index = get_index()
     start_number = get_start_number(random_list, index)
     step = get_step()
     progression_list = get_progression_list(start_number, step)
     puzzle = get_puzzle(progression_list, index)
-    missing_number = get_missing_number(progression_list, index)
-    correct_answer = str(missing_number)
-    return puzzle, correct_answer
+    correct_answer = progression_list[index]
+    return puzzle, str(correct_answer), task
