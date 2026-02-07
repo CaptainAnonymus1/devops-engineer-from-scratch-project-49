@@ -40,7 +40,6 @@ def get_puzzle(progression_list, index):
 
 
 def get_game_data():
-    game_name = "brain-progression"
     game_task = 'What number is missing in the progression?'
     random_list = get_random_list()
     index = get_index()
@@ -49,4 +48,4 @@ def get_game_data():
     progression_list = get_progression_list(start_number, step)
     puzzle = get_puzzle(progression_list, index)
     correct_answer = progression_list[index]
-    return puzzle, str(correct_answer), game_task, game_name
+    return puzzle, str(correct_answer), game_task

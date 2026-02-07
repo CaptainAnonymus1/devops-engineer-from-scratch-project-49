@@ -1,15 +1,17 @@
 from prompt import string
 
 
-def engine(game_name, get_game_data):
-    print(f"{game_name}\n")
+def engine(get_game_data):
     print("Welcome to the Brain Games!")
     user_name = string(prompt="May I have your name? ")
     print(f"Hello, {user_name}!")
+    game_task = get_game_data()[2]
+    print(f"{game_task}")
 
     for _ in range(3):
-        puzzle, correct_answer, game_task, game_name = get_game_data()
-        print(f"{game_task}")
+        result = get_game_data()
+        puzzle = result[0]
+        correct_answer = result[1]
         user_answer = string(
             prompt=f'Question: {puzzle}\n')
         print(f'Your answer: {user_answer}')
