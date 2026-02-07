@@ -13,8 +13,9 @@ def is_prime(number):
 
 
 def get_game_data():
+    game_name = "brain-prime"
     task = 'Answer "yes" if given number is prime. Otherwise answer "no".'
     number = random.randint(1, 20)
     correct_answer = "yes" if is_prime(number) else "no"
     puzzle = str(number)
-    return puzzle, correct_answer, task
+    return puzzle, correct_answer, task, game_name
