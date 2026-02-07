@@ -18,10 +18,10 @@ def action_result(first_number, second_number, action):
 
 def get_game_data():
     game_name = 'brain_calculation'
-    task = 'What is the result of the expression?'
+    game_task = 'What is the result of the expression?'
     first_number = random.randint(1, 20)
     second_number = random.randint(1, 20)
     action = random_choice()
     puzzle = f'{first_number} {action} {second_number}'
     correct_answer = str(action_result(first_number, second_number, action))
-    return puzzle, correct_answer, task, game_name
+    return puzzle, correct_answer, game_task, game_name

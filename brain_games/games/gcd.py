@@ -14,9 +14,9 @@ def get_gcd(first_number, second_number):
 
 def get_game_data():
     game_name = "brain-gcd"
-    task = 'Find the greatest common divisor of given numbers.'
+    game_task = 'Find the greatest common divisor of given numbers.'
     first_number = random.randint(1, 20)
     second_number = random.randint(1, 20)
     puzzle = f'{first_number} {second_number}'
     correct_answer = get_gcd(first_number, second_number)
-    return puzzle, str(correct_answer), task, game_name
+    return puzzle, str(correct_answer), game_task, game_name

@@ -8,8 +8,8 @@ def engine(game_name, get_game_data):
     print(f"Hello, {user_name}!")
 
     for _ in range(3):
-        puzzle, correct_answer, task, game_name = get_game_data()
-        print(f"{task}")
+        puzzle, correct_answer, game_task, game_name = get_game_data()
+        print(f"{game_task}")
         user_answer = string(
             prompt=f'Question: {puzzle}\n')
         print(f'Your answer: {user_answer}')
