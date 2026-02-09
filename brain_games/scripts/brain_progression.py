@@ -3,4 +3,4 @@ from brain_games.games import progression
 
 
 def main():
-    engine(progression.get_game_data)
+    engine(progression)
