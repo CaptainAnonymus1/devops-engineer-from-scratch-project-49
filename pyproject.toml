@@ -1,7 +1,10 @@
 [project]
+author = [
+    {name = "Yury Avdeev", email = "yury_avdeev@mail.ru"},
+]
 name = "hexlet-code"
 version = "0.1.0"
-description = "Add your description here"
+description = "Food for Your brain. Five games in one."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [

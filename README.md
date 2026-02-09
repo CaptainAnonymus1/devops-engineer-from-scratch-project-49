@@ -6,18 +6,53 @@
 
 [![SonarQube Cloud](https://sonarcloud.io/images/project_badges/sonarcloud-dark.svg)](https://sonarcloud.io/summary/new_code?id=CaptainAnonymus1_devops-engineer-from-scratch-project-49)
 
-[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=CaptainAnonymus1_devops-engineer-from-scratch-project-49&metric=bugs)](https://sonarcloud.io/summary/new_code?id=CaptainAnonymus1_devops-engineer-from-scratch-project-49)
-
-[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=CaptainAnonymus1_devops-engineer-from-scratch-project-49&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=CaptainAnonymus1_devops-engineer-from-scratch-project-49)
-
-[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=CaptainAnonymus1_devops-engineer-from-scratch-project-49&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=CaptainAnonymus1_devops-engineer-from-scratch-project-49)
+| | | |
+| :---: | :---: | :---: |
+|[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=CaptainAnonymus1_devops-engineer-from-scratch-project-49&metric=bugs)](https://sonarcloud.io/summary/new_code?id=CaptainAnonymus1_devops-engineer-from-scratch-project-49) | [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=CaptainAnonymus1_devops-engineer-from-scratch-project-49&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=CaptainAnonymus1_devops-engineer-from-scratch-project-49) | [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=CaptainAnonymus1_devops-engineer-from-scratch-project-49&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=CaptainAnonymus1_devops-engineer-from-scratch-project-49) |
 
 ## ASCIINEMA
 
-[Video on web for brain-games:](https://asciinema.org/a/mUAf9O7Tj3KzZZokwYFZAJj7l)
+[Video on web for brain-games](https://asciinema.org/a/mUAf9O7Tj3KzZZokwYFZAJj7l)
 
-[Video on web for brain-gcd:](https://asciinema.org/connect/4661f7e3-a884-4be5-b5b6-a954dd3b73ea)
+[Video on web for brain-gcd](https://asciinema.org/connect/4661f7e3-a884-4be5-b5b6-a954dd3b73ea)
 
-[Video on web for brain-progression:]( https://asciinema.org/connect/4661f7e3-a884-4be5-b5b6-a954dd3b73ea)
+[Video on web for brain-progression]( https://asciinema.org/connect/4661f7e3-a884-4be5-b5b6-a954dd3b73ea)
 
-[Video on web for brain-prime:](  https://asciinema.org/a/p8gkSEiBJqz4hyQj)
+[Video on web for brain-prime](  https://asciinema.org/a/p8gkSEiBJqz4hyQj)
+
+### Links
+
+This project was built using these tools:
+
+| Tool                                                                   | Description                                             |
+|------------------------------------------------------------------------|---------------------------------------------------------|
+| [uv](https://docs.astral.sh/uv/)                                       | "An extremely fast Python package and project manager, written in Rust" |
+| [PyPI](https://pypi.org)                                           | " The Python Package Index "            |
+| [ruff](https://docs.astral.sh/ruff/)                                   | "An extremely fast Python linter and code formatter, written in Rust" |
+
+---
+
+
+### Setup
+
+```bash
+make install
+```
+
+### Installation
+
+```bash
+make package-install
+```
+
+### Examples
+
+```bash
+brain-game
+brain-calc
+brain-even
+brain-gcd
+brain-prime
+brain-progression
+
+```
