@@ -1,5 +1,7 @@
 import random
 
+GAME_DESCRIPTION = 'Find the greatest common divisor of given numbers.'
+
 
 def get_gcd(first_number, second_number):
     a = first_number
@@ -13,9 +15,8 @@ def get_gcd(first_number, second_number):
 
 
 def get_game_data():
-    game_task = 'Find the greatest common divisor of given numbers.'
     first_number = random.randint(1, 20)
     second_number = random.randint(1, 20)
     puzzle = f'{first_number} {second_number}'
     correct_answer = get_gcd(first_number, second_number)
-    return puzzle, str(correct_answer), game_task
+    return puzzle, str(correct_answer)

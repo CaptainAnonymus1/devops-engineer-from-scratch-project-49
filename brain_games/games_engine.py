@@ -1,17 +1,18 @@
 from prompt import string
 
+ROUNDS_COUNT = 3
+# Maximum 3 rounds required to win the game.
 
-def engine(get_game_data):
+
+def engine(game_module):
     print("Welcome to the Brain Games!")
     user_name = string(prompt="May I have your name? ")
     print(f"Hello, {user_name}!")
-    game_task = get_game_data()[2]
+    game_task = game_module.GAME_DESCRIPTION
     print(f"{game_task}")
 
-    for _ in range(3):
-        result = get_game_data()
-        puzzle = result[0]
-        correct_answer = result[1]
+    for _ in range(ROUNDS_COUNT):
+        puzzle, correct_answer = game_module.get_game_data()
         user_answer = string(
             prompt=f'Question: {puzzle}\n')
         print(f'Your answer: {user_answer}')

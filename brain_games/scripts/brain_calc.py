@@ -3,4 +3,4 @@ from brain_games.games import calc
 
 
 def main(): 
-    engine(calc.get_game_data)
+    engine(calc)

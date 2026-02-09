@@ -1,9 +1,10 @@
 import random
 
+GAME_DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
+
 
 def get_game_data():
-    game_task = 'Answer "yes" if the number is even, otherwise answer "no".'
     number = random.randint(1, 20)
     correct_answer = "yes" if number % 2 == 0 else "no"
     puzzle = str(number)
-    return puzzle, correct_answer, game_task
+    return puzzle, correct_answer

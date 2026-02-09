@@ -3,4 +3,4 @@ from brain_games.games import gcd
 
 
 def main():
-    engine(gcd.get_game_data)
+    engine(gcd)
