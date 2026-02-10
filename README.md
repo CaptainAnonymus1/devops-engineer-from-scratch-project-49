@@ -45,6 +45,12 @@ make install
 make package-install
 ```
 
+### Test
+
+```bash
+make lint
+```
+
 ### Examples
 
 ```bash

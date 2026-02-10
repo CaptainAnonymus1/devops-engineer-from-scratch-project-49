@@ -1,6 +1,6 @@
-from brain_games.games_engine import engine
+from brain_games.games_engine import start_game
 from brain_games.games import even
 
 
 def main():
-    engine(even)
+    start_game(even)

@@ -4,7 +4,7 @@ ROUNDS_COUNT = 3
 # Maximum 3 rounds required to win the game.
 
 
-def engine(game_module):
+def start_game(game_module):
     print("Welcome to the Brain Games!")
     user_name = string(prompt="May I have your name? ")
     print(f"Hello, {user_name}!")

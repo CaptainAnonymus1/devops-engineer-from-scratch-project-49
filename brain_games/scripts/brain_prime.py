@@ -1,6 +1,6 @@
-from brain_games.games_engine import engine
+from brain_games.games_engine import start_game
 from brain_games.games import prime
 
 
 def main():
-    engine(prime)
+    start_game(prime)
