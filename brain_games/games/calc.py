@@ -1,6 +1,6 @@
 import random
 
-GAME_DESCRIPTION = 'What is the result of the expression?'
+RULES = 'What is the result of the expression?'
 
 
 def random_choice():

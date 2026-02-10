@@ -8,7 +8,7 @@ def start_game(game_module):
     print("Welcome to the Brain Games!")
     user_name = string(prompt="May I have your name? ")
     print(f"Hello, {user_name}!")
-    game_task = game_module.GAME_DESCRIPTION
+    game_task = game_module.RULES
     print(f"{game_task}")
 
     for _ in range(ROUNDS_COUNT):

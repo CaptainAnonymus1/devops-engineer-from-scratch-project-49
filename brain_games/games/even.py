@@ -1,6 +1,6 @@
 import random
 
-GAME_DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
+RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def get_game_data():
